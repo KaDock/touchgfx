@@ -1,0 +1,15 @@
+task :clean do
+  sh "make -f simulator/gcc/Makefile clean"
+end
+
+task :bash do
+  sh "bash"
+end
+
+task :build do
+  sh "make -f simulator/gcc/Makefile"
+end
+
+task :run => :build do
+  sh "/app/build/bin/simulator.out"
+end

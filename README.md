@@ -41,3 +41,18 @@ XQuartz should be installed (via brew or other means - remember to relog)
            -v $(pwd)/touchgfx-4.6.1-eval/touchgfx:/touchgfx:Z \
            kalledk/touchgfx \
            clean run
+           
+## Windows
+
+
+## OSX
+
+XMing or another XServer should be installed
+
+    # The IP may be another
+    docker run -it --rm \
+           --env=DISPLAY=10.192.0.179:0 \
+           -v /c/touchgfx-4.6.1-eval/app/example/clock_example:/app:Z \
+           -v /c/touchgfx-4.6.1-eval/touchgfx:/touchgfx:Z \
+           kalledk/touchgfx \
+           clean run

@@ -31,8 +31,8 @@ XQuartz should be installed (via brew or other means - remember to relog)
 
 ## Linux
     docker run -it --rm \
-           -v /tmp/.X11-unix:/tmp/.X11-unix \ # mount the X11 socket
-           -e DISPLAY=unix$DISPLAY \ # pass the display
+           -v /tmp/.X11-unix:/tmp/.X11-unix \
+           -e DISPLAY=unix$DISPLAY \ 
            -v $(pwd)/touchgfx-4.6.1-eval/app/example/clock_example:/app:Z \
            -v $(pwd)/touchgfx-4.6.1-eval/touchgfx:/touchgfx:Z \
            kalledk/touchgfx \

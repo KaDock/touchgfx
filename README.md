@@ -44,9 +44,6 @@ XQuartz should be installed (via brew or other means - remember to relog)
            
 ## Windows
 
-
-## OSX
-
 XMing or another XServer should be installed
 
     # The IP may be another
